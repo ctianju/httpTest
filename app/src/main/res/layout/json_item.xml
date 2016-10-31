@@ -1,0 +1,55 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+                xmlns:tools="http://schemas.android.com/tools"
+                android:orientation="vertical"
+                android:layout_width="match_parent"
+                android:layout_height="match_parent">
+
+    <ImageView
+        tools:src="@mipmap/ic_launcher"
+        android:layout_alignParentLeft="true"
+        android:id="@+id/headerIcon"
+        android:layout_width="150dp"
+        android:layout_height="100dp"/>
+
+    <LinearLayout
+        android:padding="5dp"
+        android:orientation="vertical"
+        android:layout_toRightOf="@+id/headerIcon"
+        android:layout_alignParentRight="true"
+        android:layout_width="match_parent"
+        android:layout_height="100dp">
+        <TextView
+            android:textColor="@android:color/black"
+            android:layout_weight="1"
+            tools:text="小明"
+            android:id="@+id/name"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"/>
+
+        <TextView
+            android:textColor="@android:color/black"
+            android:layout_weight="1"
+            tools:text="20"
+            android:id="@+id/age"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"/>
+        <TextView
+            android:textColor="@android:color/black"
+            android:layout_weight="1"
+            tools:text="北大"
+            android:textSize="20sp"
+            android:id="@+id/school1"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"/>
+        <TextView
+            android:textColor="@android:color/black"
+            android:layout_weight="1"
+            tools:text="清江"
+            android:id="@+id/school2"
+            android:textSize="20sp"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"/>
+    </LinearLayout>
+
+</RelativeLayout>
